@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>navgation</title>
+<title>Bootstrap Example</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+  
+
+  h2{
+    font-family: serif;
+   font-size:35px;
+   font-weight: 600;
+   border:3px #000000;
+   background-size: cover;
+  }
+  
+    h1 {
+  font-size: 30px;
+  font-weight: 900;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
+               3px 4px 4px rgba(185, 247, 0, 0.15),
+               4px 6px 4px rgba(32, 164, 246, 0.2),
+               5px 8px 4px rgab(179, 147, 211, 0.25);
+    }
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+      height: 100vh;
+      background: linear-gradient(to right, #6cd860, #022d11); /* Left to right gradient */
+  
+      justify-content: center;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+.topnav{
+
+overflow: hidden;
+
+background-color: #ffffff;
+
+
+}
+
+.topnav a{
+
+float: left;
+
+color: rgb(0, 0, 0);
+
+text-align: center;
+
+padding: 14px 16px;
+
+text-decoration: none;
+
+font-size: 17px;
+
+}
+
+.topnav a:hover{
+
+background-color: rgb(248, 248, 249);
+
+color: rgb(90, 93, 95);
+
+}
+
+.topnav a.active{
+
+background-color: rgb(244, 245, 243);
+
+color: rgb(0, 0, 0);
+
+}
+
+
+</style>
+   
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+ 
+
+<div class="topnav">
+
+<a class="active" href="main1.html">home</a>
+
+<a href="about.html">about</a>
+
+<a href="contact.html">contact me</a>
+
+<a href="signup.html">Sign up</a>
+<a href="rentcars.html">Rental Cars🏎️</a>
+</div>
+<br>
+<br>
+<section class="Rentcars-section">
+  <div class="overlay"></div>
+  <div class="RentCars-content">
+    <h1>Rent Car</h1>
+    <p>
+      At <strong>Rental Cars</strong>, we believe renting a car should be as smooth and exciting as the ride itself.
+      Whether it's a weekend trip or a business journey, we offer a fleet of stylish, affordable, and reliable vehicles to match your needs.<br><br><br><br>
+      Our mission: to put you behind the wheel with ease, confidence, and comfort. From compact cars to luxury SUVs, we’re here to deliver not just a vehicle—<em>but an experience.</em>
+    </p>
+   <div class="container">
+
+    <h2>CAR FOR RENT</h2>
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <!-- Indicators -->
+    
+    <ol class="carousel-indicators">
+    
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    
+    </ol>
+    
+    <!-- Wrapper for slides -->
+    
+    <div class="carousel-inner">
+    
+    <div class="item active">
+    
+    <img src="data:image/jpeg;base64,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" alt="Image 1">
+    
+    </div>
+    
+    <div class="item">
+    
+    <img src="https://static3.toyotabharat.com/images/showroom/hilux/black-edition-color-1600x671.png" alt="Image 2">
+    
+    </div>
+    
+    
+    <div class="item">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkv6heW54CuIYWgPBKGbOsXyBNeFHafoxlMQ&s" alt="Penguin">
+    
+    </div>
+    
+    </div>
+    
+    <!-- Left and right controls -->
+    
+    <a class="left carousel-control" href="" data-slide="prev">
+    
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    
+    <span class="sr-only">Previous</span>
+    
+    </a>
+    
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    
+    <span class="sr-only">Next</span>
+    
+    </a>
+    
+    </div>
+    
+    </div>
+    <div>
+      <br> <br>
+      <h2>SEDAN:$75 per day</h2>
+      <br>
+      <h2>SUV:$100 per day</h2>
+      <br>
+      <br>
+      
+    </div>
+    <div id="grad1"></div>
+    
+    </body>
+    
+    </html>
