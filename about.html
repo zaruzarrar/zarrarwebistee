@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Rental Cars</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .about-section {
+      position: relative;
+      background: url('https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-937c-61f7-b413-e30ca863b077/raw?se=2025-05-04T16%3A03%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=d24d6092-603e-5ef6-862b-4aeaa57be0ce&skoid=ae70be19-8043-4428-a990-27c58b478304&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-04T10%3A55%3A45Z&ske=2025-05-05T10%3A55%3A45Z&sks=b&skv=2024-08-04&sig=cYEMHVJ3xYBa3XOnjp0jPF8crwZ/JqQ6cValVJR2FJc%3D') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .about-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .about-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .about-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .about-content h1 {
+        font-size: 2rem;
+      }
+      .about-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="about-section">
+  <div class="overlay"></div>
+  <div class="about-content">
+    <h1>About Rental Cars</h1>
+    <p>
+      At <strong>Rental Cars</strong>, we believe renting a car should be as smooth and exciting as the ride itself.
+      Whether it's a weekend trip or a business journey, we offer a fleet of stylish, affordable, and reliable vehicles to match your needs.<br><br>
+      Our mission: to put you behind the wheel with ease, confidence, and comfort. From compact cars to luxury SUVs, we’re here to deliver not just a vehicle—<em>but an experience.</em>
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
