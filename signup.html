@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Sign Up</title>
+  <style>
+      body{
+
+margin: 0;
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnav{
+
+overflow: hidden;
+
+background-color: #ffffff;
+
+
+}
+
+.topnav a{
+
+float: left;
+
+color: rgb(0, 0, 0);
+
+text-align: center;
+
+padding: 14px 16px;
+
+text-decoration: none;
+
+font-size: 17px;
+
+}
+
+.topnav a:hover{
+
+background-color: rgb(248, 248, 249);
+
+color: rgb(90, 93, 95);
+
+}
+
+.topnav a.active{
+
+background-color: rgb(244, 245, 243);
+
+color: rgb(0, 0, 0);
+
+}
+
+
+
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      width: 320px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: 0.2s ease;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #6e8efb;
+      box-shadow: 0 0 5px #6e8efb50;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #6e8efb;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #5c76f3;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <div class="topnav">
+    <br>
+
+    <a class="active" href="main1.html">home</a>
+    
+    <a href="about.html">about</a>
+    
+    <a href="contact.html">contact me</a>
+    
+    <a href="signup.html">Sign up</a>
+    <a href="rentcars.html">Rental Cars</a>
+    
+   
+  <div class="container">
+    <form id="signupForm" class="form">
+      <h2>Create Account</h2>
+
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="number" id="age" placeholder="Age" required min="0" />
+
+      <select id="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefer_not">Prefer not to say</option>
+      </select>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const age = document.getElementById('age').value;
+      const gender = document.getElementById('gender').value;
+
+      if (!username || !email || !password || !age || !gender) {
+        alert('Please fill all the fields!');
+        return;
+      }
+
+      // Redirect to main1.html
+      window.location.href = "main1.html";
+    });
+  </script>
+  
+</body>
+</html>
+
+
